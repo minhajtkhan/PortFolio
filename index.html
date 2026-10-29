@@ -1,0 +1,3057 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minhaj Tahir Khan — Full-Stack Web Developer &amp; Software Engineer</title>
+
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description"
+    content="Portfolio of Minhaj Tahir Khan — Full-Stack Web Developer &amp; Software Engineer skilled in HTML, CSS, JavaScript, React, Node.js, MongoDB, SQL, PHP, and Python.">
+  <meta name="keywords"
+    content="Minhaj Tahir Khan, Full-Stack Developer, Web Developer, React, Node.js, MongoDB, SQL, PHP, Python, Software Engineer, Karachi">
+  <meta name="author" content="Minhaj Tahir Khan">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Minhaj Tahir Khan — Full-Stack Developer &amp; Software Engineer">
+  <meta property="og:description"
+    content="Explore live projects, full-stack architectures, and web applications built by Minhaj Tahir Khan.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Minhaj Tahir Khan — Full-Stack Developer">
+  <meta name="twitter:description"
+    content="Engineering scalable full-stack web applications and modern user interfaces.">
+  <meta name="twitter:image" content="assets/images/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF5500'/%3E%3Cpath d='M26 72V28h13l11 20 11-20h13v44h-11V44l-9.5 17h-7L37 44v28H26z' fill='%23FFFFFF'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Bebas Neue (Editorial Display) & Plus Jakarta Sans (Clean Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- JSON-LD Structured Data for Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Minhaj Tahir Khan",
+    "jobTitle": "Full-Stack Web Developer & Software Engineer",
+    "email": "Minhajtahir2020@gmail.com",
+    "telephone": "+923351313645",
+    "url": "https://www.linkedin.com/in/minhaj-tahir-khan",
+    "sameAs": [
+      "https://www.linkedin.com/in/minhaj-tahir-khan",
+      "https://github.com/minhajtk"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Karachi",
+      "addressCountry": "Pakistan"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Karachi (UBIT)"
+    },
+    "knowsAbout": [
+      "HTML", "CSS", "JavaScript", "React", "Next.js", "MongoDB", "SQL", "NodeJS", "PHP", "Python", "Full-Stack Development"
+    ]
+  }
+  </script>
+
+  <style>
+    /* ==========================================================================
+       EDITORIAL DESIGN SYSTEM & COLOR TOKENS
+       ========================================================================== */
+    :root {
+      /* Typography */
+      --font-display: 'Bebas Neue', Impact, 'Arial Black', sans-serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+      /* Signature Brand Colors */
+      --brand-orange: #FF5500;
+      --brand-orange-hover: #E04B00;
+      --brand-orange-soft: rgba(255, 85, 0, 0.12);
+
+      /* 8px Spacing System */
+      --sp-1: 0.25rem;
+      /* 4px */
+      --sp-2: 0.5rem;
+      /* 8px */
+      --sp-3: 0.75rem;
+      /* 12px */
+      --sp-4: 1rem;
+      /* 16px */
+      --sp-5: 1.25rem;
+      /* 20px */
+      --sp-6: 1.5rem;
+      /* 24px */
+      --sp-8: 2rem;
+      /* 32px */
+      --sp-10: 2.5rem;
+      /* 40px */
+      --sp-12: 3rem;
+      /* 48px */
+      --sp-16: 4rem;
+      /* 64px */
+      --sp-20: 5rem;
+      /* 80px */
+      --sp-24: 6rem;
+      /* 96px */
+
+      /* Radii */
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --radius-full: 9999px;
+
+      /* Transitions */
+      --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-fast: 0.15s ease;
+      --transition-base: 0.25s var(--ease-editorial);
+      --transition-slow: 0.4s var(--ease-editorial);
+    }
+
+    /* DARK THEME (Signature Editorial Look) */
+    [data-theme="dark"] {
+      --bg-main: #0C0C0E;
+      --bg-surface: #141417;
+      --bg-surface-elevated: #1C1C21;
+      --bg-contrast-light: #F4F4F6;
+      --text-contrast-dark: #0C0C0E;
+
+      --text-main: #FFFFFF;
+      --text-muted: #D1D1D6;
+      --text-dim: #8E8E93;
+
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-medium: rgba(255, 255, 255, 0.16);
+
+      --card-white-bg: #FFFFFF;
+      --card-white-text: #0C0C0E;
+      --card-white-dim: #636366;
+
+      --nav-bg: rgba(12, 12, 14, 0.85);
+      --shadow-card: 0 16px 40px rgba(0, 0, 0, 0.4);
+      --shadow-white-card: 0 24px 60px rgba(0, 0, 0, 0.6);
+    }
+
+    /* LIGHT THEME */
+    [data-theme="light"] {
+      --bg-main: #F7F7F9;
+      --bg-surface: #FFFFFF;
+      --bg-surface-elevated: #EFEFF3;
+      --bg-contrast-light: #141417;
+      --text-contrast-dark: #FFFFFF;
+
+      --text-main: #0C0C0E;
+      --text-muted: #3A3A3C;
+      --text-dim: #636366;
+
+      --border-subtle: rgba(0, 0, 0, 0.08);
+      --border-medium: rgba(0, 0, 0, 0.15);
+
+      --card-white-bg: #FFFFFF;
+      --card-white-text: #0C0C0E;
+      --card-white-dim: #636366;
+
+      --nav-bg: rgba(247, 247, 249, 0.9);
+      --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.07);
+      --shadow-white-card: 0 20px 48px rgba(0, 0, 0, 0.12);
+    }
+
+    /* ==========================================================================
+       RESET & BASE ELEMENTS
+       ========================================================================== */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background-color var(--transition-slow), color var(--transition-slow);
+    }
+
+    ::selection {
+      background: var(--brand-orange);
+      color: #FFFFFF;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--brand-orange);
+      outline-offset: 3px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    button,
+    input,
+    textarea {
+      font-family: inherit;
+      font-size: inherit;
+      border: none;
+      outline: none;
+      background: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 var(--sp-6);
+    }
+
+    .container-wide {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 var(--sp-6);
+    }
+
+    /* Skip Link */
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: var(--sp-4);
+      background: var(--brand-orange);
+      color: #FFFFFF;
+      padding: var(--sp-2) var(--sp-4);
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      z-index: 9999;
+      transition: top 0.2s ease;
+    }
+
+    .skip-link:focus {
+      top: var(--sp-4);
+    }
+
+    /* ==========================================================================
+       BUTTONS & CHIPS
+       ========================================================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--sp-2);
+      padding: 0.75rem 1.4rem;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all var(--transition-base);
+      white-space: nowrap;
+    }
+
+    .btn svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+      transition: transform var(--transition-fast);
+    }
+
+    .btn:hover svg {
+      transform: translateX(4px);
+    }
+
+    .btn-orange {
+      background: var(--brand-orange);
+      color: #FFFFFF;
+    }
+
+    .btn-orange:hover {
+      background: var(--brand-orange-hover);
+      box-shadow: 0 4px 20px rgba(255, 85, 0, 0.4);
+    }
+
+    .btn-dark {
+      background: #0C0C0E;
+      color: #FFFFFF;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-dark:hover {
+      background: #1C1C21;
+      border-color: var(--brand-orange);
+      color: var(--brand-orange);
+    }
+
+    .btn-white {
+      background: #FFFFFF;
+      color: #0C0C0E;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-white:hover {
+      background: var(--brand-orange);
+      color: #FFFFFF;
+    }
+
+    /* Small pill tags */
+    .pill-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .pill-orange {
+      background: var(--brand-orange);
+      color: #FFFFFF;
+    }
+
+    .pill-ghost {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--border-medium);
+      color: var(--text-main);
+    }
+
+    /* ==========================================================================
+       STICKY NAVBAR
+       ========================================================================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: var(--nav-bg);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: background var(--transition-base), border-color var(--transition-base);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-3);
+    }
+
+    .nav-logo-box {
+      width: 38px;
+      height: 38px;
+      background: var(--brand-orange);
+      color: #FFFFFF;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-sm);
+    }
+
+    .nav-meta {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-location {
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--text-main);
+      text-transform: uppercase;
+    }
+
+    .nav-clock {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      font-family: var(--font-sans);
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-6);
+    }
+
+    .nav-link {
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      transition: color var(--transition-fast);
+      position: relative;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--text-main);
+    }
+
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--brand-orange);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-3);
+    }
+
+    .theme-toggle-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface-elevated);
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .theme-toggle-btn:hover {
+      border-color: var(--brand-orange);
+      color: var(--brand-orange);
+    }
+
+    .theme-toggle-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    .hamburger-btn {
+      display: none;
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface-elevated);
+      color: var(--text-main);
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .hamburger-btn span {
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      transition: transform var(--transition-base), opacity var(--transition-base);
+    }
+
+    .hamburger-btn[aria-expanded="true"] span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger-btn[aria-expanded="true"] span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger-btn[aria-expanded="true"] span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* Mobile Drawer */
+    .mobile-menu-drawer {
+      display: none;
+      position: fixed;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background: var(--bg-surface);
+      border-bottom: 2px solid var(--brand-orange);
+      padding: var(--sp-6);
+      box-shadow: var(--shadow-card);
+      z-index: 999;
+      transform: translateY(-20px);
+      opacity: 0;
+      visibility: hidden;
+      transition: all var(--transition-base);
+    }
+
+    .mobile-menu-drawer.open {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .mobile-nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-4);
+      margin-bottom: var(--sp-6);
+    }
+
+    .mobile-nav-link {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      letter-spacing: 0.04em;
+      color: var(--text-main);
+      text-transform: uppercase;
+    }
+
+    .mobile-nav-link:hover,
+    .mobile-nav-link.active {
+      color: var(--brand-orange);
+    }
+
+    /* ==========================================================================
+       HERO SECTION (Bold Split Orange & Black with Minhaj's Portrait)
+       ========================================================================== */
+    .hero-split {
+      position: relative;
+      background: #0C0C0E;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+
+    .hero-container {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      min-height: 86vh;
+      position: relative;
+    }
+
+    /* Left Orange Block with Curved Cut */
+    .hero-orange-side {
+      background: var(--brand-orange);
+      color: #FFFFFF;
+      padding: var(--sp-12) var(--sp-10) var(--sp-12) var(--sp-8);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      z-index: 2;
+      border-bottom-right-radius: 90px;
+    }
+
+    .hero-meta-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: var(--sp-6);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.95;
+    }
+
+    .hero-headline-wrap {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .hero-giant-title {
+      font-family: var(--font-display);
+      font-size: clamp(4.5rem, 9.5vw, 8.5rem);
+      line-height: 0.88;
+      letter-spacing: -0.01em;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      margin-bottom: var(--sp-4);
+    }
+
+    .hero-giant-title span {
+      display: block;
+    }
+
+    .hero-subparagraph {
+      font-size: 1.12rem;
+      font-weight: 500;
+      line-height: 1.6;
+      max-width: 520px;
+      margin-bottom: var(--sp-8);
+      color: #FFFFFF;
+      opacity: 0.95;
+    }
+
+    .hero-orange-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--sp-4);
+      padding-top: var(--sp-6);
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .hero-social-icons {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-3);
+    }
+
+    .hero-social-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.2);
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--transition-fast);
+    }
+
+    .hero-social-icon:hover {
+      background: #000000;
+      transform: translateY(-2px);
+    }
+
+    .hero-social-icon svg {
+      width: 17px;
+      height: 17px;
+      fill: currentColor;
+    }
+
+    /* Right Dark Side with Minhaj's Photo */
+    .hero-dark-side {
+      background: #0C0C0E;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: var(--sp-12) var(--sp-8) var(--sp-12) var(--sp-8);
+      z-index: 1;
+    }
+
+    .hero-services-list {
+      margin-left: auto;
+      text-align: right;
+      z-index: 3;
+    }
+
+    .services-tag {
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      color: var(--brand-orange);
+      text-transform: uppercase;
+      margin-bottom: var(--sp-2);
+    }
+
+    .services-items {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-dim);
+    }
+
+    .services-items span {
+      transition: color var(--transition-fast);
+    }
+
+    .services-items span:hover {
+      color: #FFFFFF;
+    }
+
+    /* Portrait Image Container */
+    .hero-portrait-frame {
+      position: relative;
+      width: 100%;
+      max-width: 460px;
+      margin: 0 auto;
+      z-index: 2;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .hero-portrait-img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      object-position: center 15%;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+      filter: contrast(1.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Subtle orange corner badge on photo */
+    .photo-tag-badge {
+      position: absolute;
+      bottom: var(--sp-4);
+      left: var(--sp-4);
+      background: rgba(12, 12, 14, 0.9);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--brand-orange);
+      padding: 0.4rem 0.9rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .photo-tag-badge .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--brand-orange);
+    }
+
+    /* ==========================================================================
+       ABOUT & STATEMENT SECTION
+       ========================================================================== */
+    .section-editorial {
+      padding: var(--sp-20) 0;
+      position: relative;
+    }
+
+    .about-statement-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: var(--sp-12);
+      align-items: center;
+    }
+
+    .statement-tag {
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      color: var(--brand-orange);
+      text-transform: uppercase;
+      margin-bottom: var(--sp-4);
+      display: inline-block;
+    }
+
+    .statement-headline {
+      font-size: clamp(1.75rem, 3.2vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.35;
+      color: var(--text-main);
+      margin-bottom: var(--sp-6);
+    }
+
+    .statement-headline strong {
+      color: #FFFFFF;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 0 4px;
+      border-radius: 4px;
+    }
+
+    [data-theme="light"] .statement-headline strong {
+      color: #0C0C0E;
+      background: rgba(0, 0, 0, 0.08);
+    }
+
+    .statement-subtext {
+      font-size: 1.05rem;
+      color: var(--text-dim);
+      line-height: 1.7;
+      max-width: 620px;
+    }
+
+    /* Thumbnails Gallery */
+    .statement-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--sp-3);
+    }
+
+    .statement-thumb {
+      position: relative;
+      height: 130px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .statement-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--transition-slow);
+    }
+
+    .statement-thumb:hover img {
+      transform: scale(1.08);
+    }
+
+    .thumb-label {
+      position: absolute;
+      bottom: 6px;
+      left: 6px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: rgba(0, 0, 0, 0.85);
+      color: #FFFFFF;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    /* ==========================================================================
+       "WHAT I OFFER" / SKILLS SECTION (White High-Contrast Block from Design)
+       ========================================================================== */
+    .section-what-i-offer {
+      background: #FFFFFF;
+      color: #0C0C0E;
+      padding: var(--sp-20) 0;
+      position: relative;
+    }
+
+    .offer-header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: var(--sp-12);
+      border-bottom: 2px solid #E5E5EA;
+      padding-bottom: var(--sp-4);
+    }
+
+    .offer-num-tag {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      letter-spacing: 0.08em;
+      color: #8E8E93;
+    }
+
+    .offer-giant-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--sp-12);
+      align-items: start;
+    }
+
+    .offer-left-col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .offer-word-what {
+      font-family: var(--font-display);
+      font-size: clamp(4rem, 9vw, 7.5rem);
+      line-height: 0.9;
+      color: #0C0C0E;
+      margin-bottom: var(--sp-6);
+    }
+
+    /* Preview visual cards in left col */
+    .offer-cards-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--sp-4);
+    }
+
+    .offer-card-mini {
+      background: #F4F4F6;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid #E5E5EA;
+      transition: transform var(--transition-base);
+    }
+
+    .offer-card-mini:hover {
+      transform: translateY(-4px);
+    }
+
+    .offer-card-mini img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    .offer-mini-info {
+      padding: var(--sp-3);
+    }
+
+    .offer-mini-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #0C0C0E;
+    }
+
+    .offer-mini-sub {
+      font-size: 0.72rem;
+      color: #636366;
+    }
+
+    /* Right Col: "I OFFER" & Specific Skills */
+    .offer-right-col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .offer-word-ioffer {
+      font-family: var(--font-display);
+      font-size: clamp(4rem, 9vw, 7.5rem);
+      line-height: 0.9;
+      color: #0C0C0E;
+      margin-bottom: var(--sp-6);
+    }
+
+    .offer-services-stack {
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-2);
+      margin-bottom: var(--sp-8);
+    }
+
+    .offer-service-item {
+      font-family: var(--font-display);
+      font-size: 1.85rem;
+      letter-spacing: 0.05em;
+      color: #8E8E93;
+      cursor: pointer;
+      transition: color var(--transition-fast), transform var(--transition-fast);
+      display: flex;
+      align-items: center;
+      gap: var(--sp-3);
+    }
+
+    .offer-service-item:hover,
+    .offer-service-item.active {
+      color: var(--brand-orange);
+      transform: translateX(6px);
+    }
+
+    .offer-service-item::before {
+      content: '—';
+      font-size: 1.2rem;
+      opacity: 0.4;
+    }
+
+    /* Skills Grid (Exactly user's specified skills) */
+    .skills-pills-box {
+      background: #F4F4F6;
+      border: 1px solid #E5E5EA;
+      border-radius: var(--radius-lg);
+      padding: var(--sp-6);
+      margin-top: var(--sp-4);
+    }
+
+    .skills-box-title {
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0C0C0E;
+      margin-bottom: var(--sp-4);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .skills-box-title .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--brand-orange);
+    }
+
+    .skills-exact-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--sp-2);
+    }
+
+    .skill-badge-exact {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0.45rem 0.95rem;
+      background: #FFFFFF;
+      border: 1px solid #D1D1D6;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #0C0C0E;
+      transition: all var(--transition-fast);
+    }
+
+    .skill-badge-exact:hover {
+      background: var(--brand-orange);
+      color: #FFFFFF;
+      border-color: var(--brand-orange);
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       "HOW I WORK" / PROCESS SECTION (4 Cards, 2nd is Orange)
+       ========================================================================== */
+    .process-section {
+      background: #0C0C0E;
+      color: #FFFFFF;
+      padding: var(--sp-20) 0;
+    }
+
+    .process-top-row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--sp-4);
+      margin-bottom: var(--sp-12);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: var(--sp-6);
+    }
+
+    .process-title-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .process-tag {
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--brand-orange);
+      margin-bottom: var(--sp-2);
+    }
+
+    .process-main-heading {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 6.5vw, 5rem);
+      line-height: 0.95;
+      color: #FFFFFF;
+    }
+
+    .process-desc {
+      font-size: 0.95rem;
+      color: #8E8E93;
+      max-width: 420px;
+    }
+
+    /* 4 Numbered Process Cards */
+    .process-grid-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--sp-4);
+    }
+
+    .process-card {
+      background: #141417;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-sm);
+      padding: var(--sp-6);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 260px;
+      transition: transform var(--transition-base);
+    }
+
+    .process-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .process-num {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      line-height: 1;
+      color: #FFFFFF;
+      margin-bottom: var(--sp-6);
+    }
+
+    .process-step-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+      margin-bottom: var(--sp-2);
+      text-transform: uppercase;
+    }
+
+    .process-step-body {
+      font-size: 0.85rem;
+      color: #8E8E93;
+      line-height: 1.55;
+    }
+
+    /* CARD 2 IS HIGHLIGHTED IN SIGNATURE ORANGE (as in Design) */
+    .process-card.highlight-orange {
+      background: var(--brand-orange);
+      color: #FFFFFF;
+      border-color: var(--brand-orange);
+    }
+
+    .process-card.highlight-orange .process-num {
+      color: #FFFFFF;
+    }
+
+    .process-card.highlight-orange .process-step-title {
+      color: #FFFFFF;
+    }
+
+    .process-card.highlight-orange .process-step-body {
+      color: #FFFFFF;
+      opacity: 0.95;
+    }
+
+    /* ==========================================================================
+       "AWARDS WINNING / FEATURED PROJECTS" SECTION
+       ========================================================================== */
+    .projects-editorial-section {
+      padding: var(--sp-20) 0;
+      background: var(--bg-main);
+    }
+
+    .projects-editorial-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--sp-6);
+      margin-bottom: var(--sp-12);
+    }
+
+    .projects-giant-heading {
+      font-family: var(--font-display);
+      font-size: clamp(3.8rem, 8vw, 6.5rem);
+      line-height: 0.9;
+      color: var(--text-main);
+      text-transform: uppercase;
+    }
+
+    .projects-giant-heading span {
+      display: block;
+      color: #8E8E93;
+    }
+
+    /* Project Cards Grid */
+    .projects-cards-layout {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--sp-8);
+    }
+
+    .project-editorial-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all var(--transition-base);
+    }
+
+    .project-editorial-card:hover {
+      border-color: var(--brand-orange);
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .project-media-box {
+      position: relative;
+      height: 250px;
+      overflow: hidden;
+      background: #0C0C0E;
+    }
+
+    .project-media-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--transition-slow);
+    }
+
+    .project-editorial-card:hover .project-media-box img {
+      transform: scale(1.06);
+    }
+
+    .project-badge-top {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(12, 12, 14, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: var(--brand-orange);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .project-content-box {
+      padding: var(--sp-6);
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .project-name {
+      font-family: var(--font-display);
+      font-size: 1.85rem;
+      letter-spacing: 0.04em;
+      color: var(--text-main);
+      margin-bottom: var(--sp-2);
+    }
+
+    .project-summary {
+      font-size: 0.92rem;
+      color: var(--text-dim);
+      line-height: 1.6;
+      margin-bottom: var(--sp-4);
+      flex-grow: 1;
+    }
+
+    .project-tech-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: var(--sp-6);
+    }
+
+    .tech-pill {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      color: var(--text-muted);
+    }
+
+    .project-links-row {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-3);
+      margin-top: auto;
+    }
+
+    /* ==========================================================================
+       "MY EXPERIENCE" FLOATING WHITE CARD (as in Design)
+       ========================================================================== */
+    .experience-card-section {
+      padding: var(--sp-20) 0;
+      background: #0C0C0E;
+      color: #FFFFFF;
+      position: relative;
+    }
+
+    .exp-center-wrapper {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .exp-header-center {
+      text-align: center;
+      margin-bottom: var(--sp-10);
+    }
+
+    .exp-pill-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.35rem 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-full);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: var(--sp-3);
+    }
+
+    .exp-giant-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 5.5vw, 4.2rem);
+      line-height: 0.95;
+      text-transform: uppercase;
+    }
+
+    .exp-giant-title span {
+      color: var(--brand-orange);
+    }
+
+    /* White Floating Card from Design */
+    .exp-floating-white-card {
+      background: #FFFFFF;
+      color: #0C0C0E;
+      border-radius: var(--radius-xl);
+      padding: var(--sp-8) var(--sp-10);
+      box-shadow: var(--shadow-white-card);
+      position: relative;
+    }
+
+    .exp-timeline-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-6);
+      margin-bottom: var(--sp-8);
+    }
+
+    .exp-timeline-item {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: var(--sp-6);
+      padding-bottom: var(--sp-6);
+      border-bottom: 1px solid #E5E5EA;
+      align-items: start;
+    }
+
+    .exp-timeline-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .exp-left-role {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .exp-role-title {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #0C0C0E;
+      line-height: 1.3;
+    }
+
+    .exp-dates {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #8E8E93;
+      margin-top: 2px;
+    }
+
+    .exp-right-details {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .exp-dot-indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--brand-orange);
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+
+    .exp-detail-text {
+      font-size: 0.88rem;
+      color: #3A3A3C;
+      line-height: 1.6;
+    }
+
+    .exp-card-cta-row {
+      display: flex;
+      justify-content: center;
+      padding-top: var(--sp-4);
+    }
+
+    /* ==========================================================================
+       STATS BAR (Big Numbers from Design)
+       ========================================================================== */
+    .stats-editorial-section {
+      padding: var(--sp-16) 0;
+      background: var(--bg-main);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .stats-four-cols {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--sp-8);
+      text-align: center;
+    }
+
+    .stat-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .stat-huge-number {
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 6.5vw, 5.2rem);
+      line-height: 0.9;
+      color: var(--text-main);
+      margin-bottom: var(--sp-2);
+    }
+
+    .stat-huge-number.orange {
+      color: var(--brand-orange);
+    }
+
+    .stat-meta-label {
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+
+    /* ==========================================================================
+       TESTIMONIALS SECTION (Direct from Design)
+       ========================================================================== */
+    .testimonials-section {
+      padding: var(--sp-20) 0;
+      background: #0C0C0E;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    .testimonials-title {
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 7.5vw, 6rem);
+      line-height: 0.95;
+      text-transform: uppercase;
+      margin-bottom: var(--sp-6);
+      color: #FFFFFF;
+    }
+
+    .testimonials-quote-mark {
+      font-family: Georgia, serif;
+      font-size: 4rem;
+      line-height: 1;
+      color: var(--brand-orange);
+      margin-bottom: var(--sp-2);
+    }
+
+    .testimonials-quote-text {
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
+      font-weight: 500;
+      line-height: 1.65;
+      max-width: 800px;
+      margin: 0 auto var(--sp-8) auto;
+      color: #D1D1D6;
+    }
+
+    .testimonials-author-box {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .author-name {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+
+    .author-role {
+      font-size: 0.82rem;
+      color: var(--brand-orange);
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       "LET'S BRING YOUR IDEAS TO LIFE" CTA CARD (Tilted Card from Design)
+       ========================================================================== */
+    .cta-card-section {
+      padding: var(--sp-20) 0 var(--sp-24);
+      background: #0C0C0E;
+      position: relative;
+    }
+
+    .cta-floating-white-card {
+      background: #FFFFFF;
+      color: #0C0C0E;
+      border-radius: var(--radius-xl);
+      padding: var(--sp-12) var(--sp-10);
+      max-width: 820px;
+      margin: 0 auto;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+      text-align: center;
+      position: relative;
+    }
+
+    .cta-card-tag {
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--brand-orange);
+      margin-bottom: var(--sp-3);
+      display: inline-block;
+    }
+
+    .cta-card-heading {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 6vw, 4.5rem);
+      line-height: 0.95;
+      color: #0C0C0E;
+      text-transform: uppercase;
+      margin-bottom: var(--sp-4);
+    }
+
+    .cta-card-sub {
+      font-size: 1rem;
+      color: #636366;
+      max-width: 580px;
+      margin: 0 auto var(--sp-8) auto;
+      line-height: 1.6;
+    }
+
+    /* Corner details on CTA card */
+    .cta-corner-meta {
+      position: absolute;
+      bottom: var(--sp-4);
+      left: var(--sp-6);
+      right: var(--sp-6);
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.72rem;
+      color: #8E8E93;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    /* ==========================================================================
+       CONTACT FORM & VIBRANT ORANGE FOOTER (as in Design)
+       ========================================================================== */
+    .contact-anchor-section {
+      background: var(--bg-surface);
+      padding: var(--sp-16) 0;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .contact-form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--sp-12);
+      align-items: start;
+    }
+
+    .contact-info-col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-info-tag {
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--brand-orange);
+      margin-bottom: var(--sp-2);
+    }
+
+    .contact-info-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 5vw, 4rem);
+      line-height: 0.95;
+      color: var(--text-main);
+      margin-bottom: var(--sp-4);
+      text-transform: uppercase;
+    }
+
+    .contact-info-p {
+      font-size: 1rem;
+      color: var(--text-dim);
+      margin-bottom: var(--sp-6);
+      line-height: 1.6;
+    }
+
+    .direct-links-flow {
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-3);
+    }
+
+    .direct-contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--sp-4);
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      transition: all var(--transition-fast);
+    }
+
+    .direct-contact-item:hover {
+      border-color: var(--brand-orange);
+      transform: translateX(4px);
+    }
+
+    .contact-type-label {
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+
+    .contact-type-val {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .copy-chip-btn {
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      background: var(--bg-main);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      color: var(--brand-orange);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .copy-chip-btn:hover {
+      background: var(--brand-orange);
+      color: #FFFFFF;
+    }
+
+    /* Form Card */
+    .form-box {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: var(--sp-8);
+    }
+
+    .form-group {
+      margin-bottom: var(--sp-4);
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: var(--sp-2);
+    }
+
+    .form-input,
+    .form-textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background: var(--bg-main);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-sm);
+      color: var(--text-main);
+      font-size: 0.92rem;
+      transition: border-color var(--transition-fast);
+    }
+
+    .form-input:focus,
+    .form-textarea:focus {
+      border-color: var(--brand-orange);
+      outline: none;
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 110px;
+    }
+
+    .form-error {
+      font-size: 0.78rem;
+      color: #FF453A;
+      margin-top: 4px;
+      display: none;
+    }
+
+    .form-group.has-error .form-input,
+    .form-group.has-error .form-textarea {
+      border-color: #FF453A;
+    }
+
+    .form-group.has-error .form-error {
+      display: block;
+    }
+
+    /* ==========================================================================
+       VIBRANT ORANGE FOOTER (exact match to Design bottom)
+       ========================================================================== */
+    .orange-footer-block {
+      background: var(--brand-orange);
+      color: #FFFFFF;
+      padding: var(--sp-12) 0 var(--sp-6);
+      position: relative;
+    }
+
+    .orange-footer-top {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: var(--sp-8);
+      align-items: center;
+      margin-bottom: var(--sp-8);
+      padding-bottom: var(--sp-8);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .footer-portrait-circle {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid #FFFFFF;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-portrait-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 15%;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-5);
+      flex-wrap: wrap;
+    }
+
+    .footer-nav-link {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      transition: opacity var(--transition-fast);
+    }
+
+    .footer-nav-link:hover {
+      opacity: 0.75;
+    }
+
+    .footer-social-cluster {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-2);
+    }
+
+    .footer-social-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.2);
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--transition-fast);
+    }
+
+    .footer-social-btn:hover {
+      background: #000000;
+      transform: translateY(-2px);
+    }
+
+    .footer-social-btn svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    /* Giant Monogram / Name Typography across footer */
+    .footer-giant-name {
+      font-family: var(--font-display);
+      font-size: clamp(3.8rem, 11vw, 10rem);
+      line-height: 0.88;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      letter-spacing: -0.01em;
+      margin-bottom: var(--sp-6);
+      user-select: none;
+    }
+
+    .footer-legal-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--sp-4);
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 600;
+    }
+
+    .back-top-arrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #FFFFFF;
+      font-weight: 700;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .back-top-arrow svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    /* Toast Notification */
+    .toast-pill {
+      position: fixed;
+      bottom: var(--sp-6);
+      right: var(--sp-6);
+      background: #0C0C0E;
+      color: #FFFFFF;
+      border: 1px solid var(--brand-orange);
+      border-radius: var(--radius-sm);
+      padding: var(--sp-3) var(--sp-5);
+      font-size: 0.88rem;
+      font-weight: 700;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transform: translateY(80px);
+      opacity: 0;
+      visibility: hidden;
+      transition: all var(--transition-base);
+      z-index: 9999;
+    }
+
+    .toast-pill.show {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .toast-pill svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--brand-orange);
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS (Mobile First)
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-orange-side {
+        border-bottom-right-radius: 40px;
+        padding: var(--sp-8) var(--sp-6);
+      }
+
+      .hero-dark-side {
+        padding: var(--sp-8) var(--sp-6);
+      }
+
+      .hero-services-list {
+        text-align: left;
+        margin-left: 0;
+        margin-bottom: var(--sp-6);
+      }
+
+      .about-statement-grid,
+      .offer-giant-row,
+      .contact-form-grid {
+        grid-template-columns: 1fr;
+        gap: var(--sp-8);
+      }
+
+      .process-grid-cards {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .projects-cards-layout {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--sp-6);
+      }
+
+      .orange-footer-top {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .projects-cards-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-menu {
+        display: none;
+      }
+
+      .hamburger-btn {
+        display: flex;
+      }
+
+      .mobile-menu-drawer {
+        display: block;
+      }
+
+      .process-grid-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-four-cols {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--sp-6);
+      }
+
+      .exp-timeline-item {
+        grid-template-columns: 1fr;
+        gap: var(--sp-2);
+      }
+
+      .hero-portrait-img {
+        height: 380px;
+      }
+
+      .cta-floating-white-card {
+        padding: var(--sp-8) var(--sp-6);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Accessibility Skip -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ==========================================================================
+       STICKY NAVBAR
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container-wide">
+      <div class="nav-inner">
+        <!-- Brand & Local Time / Location -->
+        <div class="nav-brand">
+          <a href="#hero" class="nav-logo-box" aria-label="Minhaj Tahir Khan Home">M</a>
+          <div class="nav-meta">
+            <span class="nav-location">Karachi, Pakistan</span>
+            <span class="nav-clock" id="karachiClock">--:--:-- PKT</span>
+          </div>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="nav-menu" aria-label="Main Navigation">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#process" class="nav-link">Process</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Actions -->
+        <div class="nav-actions">
+          <a href="./Minhaj_Tahir_Khan_Web_Developer_CV.pdf" target="_blank" download="Minhaj_Tahir_Khan_Web_Developer_CV.pdf" class="btn btn-dark"
+            style="padding: 0.45rem 0.95rem; font-size: 0.8rem;" title="Download CV (PDF)">
+            <span>Resume (PDF)</span>
+          </a>
+
+          <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+            <!-- Sun Icon (for Dark mode) -->
+            <svg class="sun-icon" viewBox="0 0 24 24">
+              <path
+                d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+            </svg>
+            <!-- Moon Icon (for Light mode) -->
+            <svg class="moon-icon" viewBox="0 0 24 24" style="display: none;">
+              <path
+                d="M12.3 2a10 10 0 0 0-.19 20 10 10 0 0 0 8.93-5.52.75.75 0 0 0-.82-1.07A8 8 0 1 1 11.23 3.08a.75.75 0 0 0 .07-1.08z" />
+            </svg>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button id="hamburgerBtn" class="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="mobileDrawer">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu-drawer" id="mobileDrawer" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#process" class="mobile-nav-link">Process</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div style="display: flex; flex-direction: column; gap: var(--sp-2);">
+        <a href="#contact" class="btn btn-orange" style="width: 100%;">
+          <span>Start a Project</span>
+        </a>
+        <a href="./Minhaj_Tahir_Khan_Web_Developer_CV.pdf" target="_blank" download="Minhaj_Tahir_Khan_Web_Developer_CV.pdf" class="btn btn-dark" style="width: 100%;">
+          <span>Download CV (PDF)</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ==========================================================================
+         HERO SECTION (Split Orange & Black with Minhaj's Portrait Photo)
+         ========================================================================== -->
+    <section class="hero-split" id="hero" aria-label="Hero Introduction">
+      <div class="hero-container">
+        <!-- Left Side: Vibrant Orange Block -->
+        <div class="hero-orange-side">
+          <div class="hero-meta-top">
+            <span>Karachi, Pakistan</span>
+            <span class="hero-live-clock" id="heroClock">--:-- PKT</span>
+          </div>
+
+          <div class="hero-headline-wrap">
+            <h1 class="hero-giant-title">
+              <span>MINHAJ</span>
+              <span>TAHIR KHAN</span>
+            </h1>
+            <p class="hero-subparagraph">
+              Full-Stack Web Developer &amp; Software Engineer. Crafting high-performance web applications, scalable
+              full-stack architectures, and intuitive digital experiences.
+            </p>
+            <div style="display: flex; gap: var(--sp-3); flex-wrap: wrap; margin-bottom: var(--sp-2);">
+              <a href="#projects" class="btn btn-dark" style="padding: 0.85rem 1.6rem;">
+                <span>Start A Project</span>
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-7.85-1.42 1.42L16.86 11H5v2z" />
+                </svg>
+              </a>
+              <a href="./Minhaj_Tahir_Khan_Web_Developer_CV.pdf" target="_blank" download="Minhaj_Tahir_Khan_Web_Developer_CV.pdf" class="btn btn-dark" style="padding: 0.85rem 1.6rem; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.35);">
+                <span>Download CV</span>
+                <svg viewBox="0 0 24 24">
+                  <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-orange-footer">
+            <div class="hero-social-icons">
+              <a href="https://www.linkedin.com/in/minhaj-tahir-khan" target="_blank" rel="noopener noreferrer"
+                class="hero-social-icon" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 1 0 1.6 1.6 1.6 1.6 0 0 0-1.6-1.6z" />
+                </svg>
+              </a>
+              <a href="https://github.com/minhajtk" target="_blank" rel="noopener noreferrer" class="hero-social-icon"
+                aria-label="GitHub">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                </svg>
+              </a>
+              <a href="mailto:Minhajtahir2020@gmail.com" class="hero-social-icon" aria-label="Email">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+              </a>
+            </div>
+            <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Available for Hire</span>
+          </div>
+        </div>
+
+        <!-- Right Side: Dark with Minhaj's Photo & Services List -->
+        <div class="hero-dark-side">
+          <!-- Top Right Services Stack -->
+          <div class="hero-services-list">
+            <div class="services-tag">&bull; EXPERTISE</div>
+            <div class="services-items">
+              <span>Full-Stack Development</span>
+              <span>React &amp; Modern UI</span>
+              <span>Node.js &amp; REST APIs</span>
+              <span>Database Engineering</span>
+              <span>Clean Code &amp; SQA</span>
+            </div>
+          </div>
+
+          <!-- Centered Portrait of Minhaj -->
+          <div class="hero-portrait-frame">
+            <img src="PortfolioPicture.jpg" alt="Portrait of Minhaj Tahir Khan" class="hero-portrait-img" width="460"
+              height="520" fetchpriority="high" loading="eager">
+            <div class="photo-tag-badge">
+              <span class="dot"></span>
+              <span>Minhaj Tahir Khan &bull; Software Engineer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EDITORIAL ABOUT / STATEMENT SECTION
+         ========================================================================== -->
+    <section class="section-editorial" id="about" aria-label="About Minhaj">
+      <div class="container">
+        <div class="about-statement-grid">
+          <!-- Left: Statement Text -->
+          <div>
+            <span class="statement-tag">ABOUT ME</span>
+            <h2 class="statement-headline">
+              I turn ideas into <strong>scalable web applications</strong> and <strong>intuitive digital
+                products</strong> that help businesses thrive. <strong>Every project</strong> begins with a clear
+              <strong>architecture</strong>, robust <strong>engineering</strong>, and high-quality
+              <strong>execution</strong> throughout.
+            </h2>
+            <p class="statement-subtext">
+              Software Engineering graduate from the University of Karachi (UBIT) with 3+ years of commercial
+              development and technical training experience. Proven expertise across modern JavaScript, React, Node.js,
+              PHP, Python, SQL, and MongoDB.
+            </p>
+          </div>
+
+          <!-- Right: Visual Project Thumbnails (from design) -->
+          <div class="statement-gallery">
+            <div class="statement-thumb">
+              <img src="assets/images/eventsphere_cover.png" alt="EventSphere Preview" loading="lazy">
+              <span class="thumb-label">EventSphere</span>
+            </div>
+            <div class="statement-thumb">
+              <img src="assets/images/fitnesstracker_cover.png" alt="Fitness Tracker Preview" loading="lazy">
+              <span class="thumb-label">Fitness Tracker</span>
+            </div>
+            <div class="statement-thumb">
+              <img src="assets/images/wollyknots_cover.png" alt="WollyKnots Preview" loading="lazy">
+              <span class="thumb-label">WollyKnots</span>
+            </div>
+            <div class="statement-thumb">
+              <img src="assets/images/nektira_cover.png" alt="Nektira Preview" loading="lazy">
+              <span class="thumb-label">Nektira</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       "WHAT I OFFER" / SKILLS SECTION (White High-Contrast Block from Design)
+       ========================================================================== -->
+    <section class="section-what-i-offer" id="skills" aria-label="What I Offer &amp; Skills">
+      <div class="container">
+        <div class="offer-header-bar">
+          <span class="offer-num-tag">03 / 05</span>
+          <a href="#projects" class="btn btn-dark" style="font-size: 0.8rem; padding: 0.5rem 1rem;">
+            <span>View All Projects</span>
+            <svg viewBox="0 0 24 24">
+              <path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-7.85-1.42 1.42L16.86 11H5v2z" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="offer-giant-row">
+          <!-- Left Column: WHAT + Mini Cards -->
+          <div class="offer-left-col">
+            <h2 class="offer-word-what">WHAT</h2>
+
+            <div class="offer-cards-grid">
+              <div class="offer-card-mini">
+                <img src="assets/images/eventsphere_cover.png" alt="EventSphere Full Stack MERN">
+                <div class="offer-mini-info">
+                  <h3 class="offer-mini-title">Full-Stack Platforms</h3>
+                  <p class="offer-mini-sub">EventSphere MERN Stack</p>
+                </div>
+              </div>
+              <div class="offer-card-mini">
+                <img src="assets/images/fitnesstracker_cover.png" alt="Fitness Tracker Web App">
+                <div class="offer-mini-info">
+                  <h3 class="offer-mini-title">Fitness Tracker</h3>
+                  <p class="offer-mini-sub">Workouts &amp; Nutrition Goals</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: I OFFER + Exact Skills -->
+          <div class="offer-right-col">
+            <h2 class="offer-word-ioffer">I OFFER</h2>
+
+            <div class="offer-services-stack">
+              <div class="offer-service-item">FRONTEND DEVELOPMENT</div>
+              <div class="offer-service-item active">BACKEND &amp; REST APIS</div>
+              <div class="offer-service-item">DATABASE ENGINEERING</div>
+              <div class="offer-service-item">FULL-STACK ARCHITECTURE</div>
+              <div class="offer-service-item">SOFTWARE QUALITY ASSURANCE</div>
+            </div>
+
+            <!-- Exact User Skills Box -->
+            <div class="skills-pills-box">
+              <h3 class="skills-box-title">
+                <span class="dot"></span>
+                <span>Core Technical Skills</span>
+              </h3>
+              <div class="skills-exact-grid">
+                <span class="skill-badge-exact">HTML5</span>
+                <span class="skill-badge-exact">CSS3</span>
+                <span class="skill-badge-exact">JavaScript (ES6+)</span>
+                <span class="skill-badge-exact">React.js</span>
+                <span class="skill-badge-exact">MongoDB</span>
+                <span class="skill-badge-exact">SQL</span>
+                <span class="skill-badge-exact">Node.js</span>
+                <span class="skill-badge-exact">PHP</span>
+                <span class="skill-badge-exact">Python</span>
+              </div>
+
+              <!-- Tools & SQA from CV -->
+              <div style="margin-top: var(--sp-4); padding-top: var(--sp-3); border-top: 1px dashed #D1D1D6;">
+                <div style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #636366; margin-bottom: 6px;">
+                  Tools &amp; Quality Assurance (CV)
+                </div>
+                <div class="skills-exact-grid">
+                  <span class="skill-badge-exact" style="background: #F4F4F6;">Cypress (E2E)</span>
+                  <span class="skill-badge-exact" style="background: #F4F4F6;">Postman API</span>
+                  <span class="skill-badge-exact" style="background: #F4F4F6;">Git &amp; GitHub</span>
+                  <span class="skill-badge-exact" style="background: #F4F4F6;">Jira / Agile</span>
+                  <span class="skill-badge-exact" style="background: #F4F4F6;">Mongoose ODM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       "HOW I WORK" / PROCESS SECTION (4 Numbered Cards, 2nd is Orange)
+       ========================================================================== -->
+    <section class="process-section" id="process" aria-label="Work Process">
+      <div class="container">
+        <div class="process-top-row">
+          <div class="process-title-group">
+            <span class="process-tag">WORK PROCESS</span>
+            <h2 class="process-main-heading">HOW I WORK</h2>
+          </div>
+          <p class="process-desc">
+            A structured, agile development process designed to turn complex business ideas into robust,
+            production-ready web solutions.
+          </p>
+        </div>
+
+        <div class="process-grid-cards">
+          <!-- Step 1 -->
+          <div class="process-card">
+            <div class="process-num">1.</div>
+            <div>
+              <h3 class="process-step-title">DISCOVERY</h3>
+              <p class="process-step-body">
+                I explore your project goals, technical requirements, and target users to define a concrete roadmap and
+                technical foundation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2: HIGHLIGHTED ORANGE (from design) -->
+          <div class="process-card highlight-orange">
+            <div class="process-num">2.</div>
+            <div>
+              <h3 class="process-step-title">PLANNING</h3>
+              <p class="process-step-body">
+                Structuring database schemas, API contracts, UI components, and software architectures for seamless
+                long-term scalability.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-card">
+            <div class="process-num">3.</div>
+            <div>
+              <h3 class="process-step-title">DEVELOPMENT</h3>
+              <p class="process-step-body">
+                Writing clean, maintainable, modular code. Implementing responsive UI components and robust backend
+                services.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-card">
+            <div class="process-num">4.</div>
+            <div>
+              <h3 class="process-step-title">DELIVERY</h3>
+              <p class="process-step-body">
+                Conducting cross-browser testing, accessibility validation, and performance optimization before
+                launching to production.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       "FEATURED PROJECTS" / AWARDS SECTION
+       ========================================================================== -->
+    <section class="projects-editorial-section" id="projects" aria-label="Featured Projects">
+      <div class="container">
+        <div class="projects-editorial-header">
+          <h2 class="projects-giant-heading">
+            FEATURED
+            <span>PROJECTS</span>
+          </h2>
+          <a href="https://github.com/minhajtk" target="_blank" rel="noopener noreferrer" class="btn btn-orange">
+            <span>View GitHub Repos</span>
+            <svg viewBox="0 0 24 24">
+              <path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-7.85-1.42 1.42L16.86 11H5v2z" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="projects-cards-layout">
+          <!-- 1. EventSphere -->
+          <article class="project-editorial-card">
+            <div class="project-media-box">
+              <span class="project-badge-top">Full-Stack MERN</span>
+              <img src="assets/images/eventsphere_cover.png" alt="EventSphere Platform" loading="lazy">
+            </div>
+            <div class="project-content-box">
+              <h3 class="project-name">EventSphere</h3>
+              <p class="project-summary">
+                A full-stack MERN event management platform featuring dynamic event creation, attendee registration,
+                real-time updates, and JWT role-based authentication.
+              </p>
+              <div class="project-tech-row">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express</span>
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">JavaScript</span>
+              </div>
+              <div class="project-links-row">
+                <a href="https://eventspheree.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-orange" style="padding: 0.55rem 1.1rem; font-size: 0.8rem;">
+                  <span>Live Site</span>
+                </a>
+                <a href="https://github.com/minhajtk" target="_blank" rel="noopener noreferrer" class="btn btn-dark"
+                  style="padding: 0.55rem 1.1rem; font-size: 0.8rem;">
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Fitness Tracker -->
+          <article class="project-editorial-card">
+            <div class="project-media-box">
+              <span class="project-badge-top">Full-Stack Web App</span>
+              <img src="assets/images/fitnesstracker_cover.png" alt="Fitness Tracker Platform" loading="lazy">
+            </div>
+            <div class="project-content-box">
+              <h3 class="project-name">Fitness Tracker</h3>
+              <p class="project-summary">
+                A modern full-stack fitness and lifestyle tracking web platform. Features workout routine logging, nutritional meal tracking, goal milestones, and secure authentication.
+              </p>
+              <div class="project-tech-row">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express</span>
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">Tailwind CSS</span>
+              </div>
+              <div class="project-links-row">
+                <a href="https://fitness-nu-ebon.vercel.app/login" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-orange" style="padding: 0.55rem 1.1rem; font-size: 0.8rem;">
+                  <span>Live Site</span>
+                </a>
+                <a href="https://github.com/minhajtk/FitnessTracker---2406b1.git" target="_blank" rel="noopener noreferrer" class="btn btn-dark"
+                  style="padding: 0.55rem 1.1rem; font-size: 0.8rem;">
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. WollyKnots -->
+          <article class="project-editorial-card">
+            <div class="project-media-box">
+              <span class="project-badge-top">E-Commerce Store</span>
+              <img src="assets/images/wollyknots_cover.png" alt="WollyKnots Store" loading="lazy">
+            </div>
+            <div class="project-content-box">
+              <h3 class="project-name">WollyKnots</h3>
+              <p class="project-summary">
+                A live e-commerce web application for handcrafted knitting products featuring a responsive catalog,
+                intuitive product listings, and streamlined checkout experience.
+              </p>
+              <div class="project-tech-row">
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">PHP</span>
+                <span class="tech-pill">SQL</span>
+              </div>
+              <div class="project-links-row">
+                <a href="https://wollyknots.infinityfree.io/?i=1" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-orange" style="padding: 0.55rem 1.1rem; font-size: 0.8rem;">
+                  <span>Live Site</span>
+                </a>
+                <a href="https://github.com/minhajtk" target="_blank" rel="noopener noreferrer" class="btn btn-dark"
+                  style="padding: 0.55rem 1.1rem; font-size: 0.8rem;">
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Nektira -->
+          <article class="project-editorial-card">
+            <div class="project-media-box">
+              <span class="project-badge-top">E-Commerce &amp; Brews</span>
+              <img src="assets/images/nektira_cover.png" alt="Nektira Hermes Kafes Co Platform" loading="lazy">
+            </div>
+            <div class="project-content-box">
+              <h3 class="project-name">Nektira</h3>
+              <p class="project-summary">
+                A modern specialty coffee &amp; artisanal tea e-commerce web platform. Features curated brew catalogs, merchandise showcase, member rewards, and a seamless shopping experience.
+              </p>
+              <div class="project-tech-row">
+                <span class="tech-pill">Next.js</span>
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Tailwind CSS</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Vercel</span>
+              </div>
+              <div class="project-links-row">
+                <a href="https://nektira.abduls.xyz/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-orange" style="padding: 0.55rem 1.1rem; font-size: 0.8rem;">
+                  <span>Live Site</span>
+                </a>
+                <a href="https://github.com/minhajtk" target="_blank" rel="noopener noreferrer" class="btn btn-dark"
+                  style="padding: 0.55rem 1.1rem; font-size: 0.8rem;">
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       "MY EXPERIENCE" FLOATING WHITE CARD (from Design)
+       ========================================================================== -->
+    <section class="experience-card-section" id="experience" aria-label="Career Experience">
+      <div class="container">
+        <div class="exp-center-wrapper">
+          <div class="exp-header-center">
+            <span class="exp-pill-badge">My Experience</span>
+            <h2 class="exp-giant-title">
+              Turning Ideas into <span>Scalable Software</span>
+            </h2>
+          </div>
+
+          <!-- The Floating White Card -->
+          <div class="exp-floating-white-card">
+            <div class="exp-timeline-list">
+              <!-- Item 1: Aptech -->
+              <div class="exp-timeline-item">
+                <div class="exp-left-role">
+                  <div class="exp-role-title">Faculty Member — Web Development</div>
+                  <div class="exp-dates">Apr 2024 — Present</div>
+                  <div style="font-size: 0.78rem; font-weight: 700; color: var(--brand-orange); margin-top: 2px;">Aptech Computer Education</div>
+                </div>
+                <div class="exp-right-details">
+                  <span class="exp-dot-indicator"></span>
+                  <p class="exp-detail-text">
+                    Mentored 50+ students in the software development lifecycle (SDLC), Git version control, code review practices, REST API fundamentals with Postman, and Agile/Scrum methodology. Designed hands-on curriculum covering SQL, database management, and API integration.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 2: VertexInvo -->
+              <div class="exp-timeline-item">
+                <div class="exp-left-role">
+                  <div class="exp-role-title">SQA Engineer (Web Applications)</div>
+                  <div class="exp-dates">Sep 2023 — Apr 2024</div>
+                  <div style="font-size: 0.78rem; font-weight: 700; color: var(--brand-orange); margin-top: 2px;">VertexInvo</div>
+                </div>
+                <div class="exp-right-details">
+                  <span class="exp-dot-indicator"></span>
+                  <p class="exp-detail-text">
+                    Tested web applications across major browsers and mobile viewports. Validated REST APIs with Postman (payloads, status codes, request/response contracts). Logged, assigned, and tracked 100+ defects in Jira collaborating with developers in Agile sprints.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 3: Hudasoft -->
+              <div class="exp-timeline-item">
+                <div class="exp-left-role">
+                  <div class="exp-role-title">Front-End Developer Intern</div>
+                  <div class="exp-dates">May 2022 — Jul 2022</div>
+                  <div style="font-size: 0.78rem; font-weight: 700; color: var(--brand-orange); margin-top: 2px;">Hudasoft</div>
+                </div>
+                <div class="exp-right-details">
+                  <span class="exp-dot-indicator"></span>
+                  <p class="exp-detail-text">
+                    Developed responsive front-end layouts using HTML5, CSS3, and Bootstrap, ensuring consistent rendering across devices. Performed cross-browser and UI testing, identifying, documenting, and fixing front-end defects to improve usability.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 4: Education Degree -->
+              <div class="exp-timeline-item">
+                <div class="exp-left-role">
+                  <div class="exp-role-title">BS Software Engineering</div>
+                  <div class="exp-dates">2020 — 2024 (GPA: 3.0 / 4.0)</div>
+                  <div style="font-size: 0.78rem; font-weight: 700; color: var(--brand-orange); margin-top: 2px;">Umaer Basha Institute of Information Technology, University of Karachi</div>
+                </div>
+                <div class="exp-right-details">
+                  <span class="exp-dot-indicator"></span>
+                  <p class="exp-detail-text">
+                    Bachelor of Science in Software Engineering. Hands-on specialization in full-stack web engineering, software quality assurance, relational and NoSQL databases, and scalable system design.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-card-cta-row" style="display: flex; gap: var(--sp-3); flex-wrap: wrap; justify-content: center;">
+              <a href="#contact" class="btn btn-dark" style="border-radius: var(--radius-full); padding: 0.75rem 1.8rem;">
+                <span>Let's Work Together</span>
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-7.85-1.42 1.42L16.86 11H5v2z" />
+                </svg>
+              </a>
+              <a href="./Minhaj_Tahir_Khan_Web_Developer_CV.pdf" target="_blank" download="Minhaj_Tahir_Khan_Web_Developer_CV.pdf" class="btn btn-orange" style="border-radius: var(--radius-full); padding: 0.75rem 1.8rem;">
+                <span>Download Resume (PDF)</span>
+                <svg viewBox="0 0 24 24">
+                  <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       STATS BAR (Big Numbers from Design)
+       ========================================================================== -->
+    <section class="stats-editorial-section" aria-label="Key Metrics">
+      <div class="container">
+        <div class="stats-four-cols">
+          <div class="stat-box">
+            <span class="stat-huge-number">3+</span>
+            <span class="stat-meta-label">Years Experience</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-huge-number orange">98%</span>
+            <span class="stat-meta-label">Client &amp; Student Satisfaction</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-huge-number">15+</span>
+            <span class="stat-meta-label">Web Projects Built</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-huge-number">50+</span>
+            <span class="stat-meta-label">Developers Mentored</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       TESTIMONIALS SECTION (from Design)
+       ========================================================================== -->
+    <section class="testimonials-section" aria-label="Client &amp; Colleague Feedback">
+      <div class="container">
+        <h2 class="testimonials-title">TESTIMONIALS</h2>
+        <div class="testimonials-quote-mark">&ldquo;</div>
+        <p class="testimonials-quote-text">
+          Minhaj is an exceptional full-stack developer with a rare balance of technical proficiency and clear
+          communication. His dedication to clean code, responsive UX, and rapid problem-solving made a tremendous impact
+          on our team's project delivery. Highly recommended!
+        </p>
+        <div class="testimonials-author-box">
+          <span class="author-name">Commercial Project Lead</span>
+          <span class="author-role">VertexInvo &bull; Software Solutions</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       "LET'S BRING YOUR IDEAS TO LIFE." FLOATING CTA CARD (from Design)
+       ========================================================================== -->
+    <section class="cta-card-section" aria-label="Call to Action">
+      <div class="container">
+        <div class="cta-floating-white-card">
+          <span class="cta-card-tag">&bull; LET'S WORK TOGETHER</span>
+          <h2 class="cta-card-heading">LET'S BRING YOUR IDEAS TO LIFE.</h2>
+          <p class="cta-card-sub">
+            Let's collaborate to build high-performance web applications, scalable backends, and pixel-perfect digital
+            experiences that elevate your brand.
+          </p>
+          <a href="#contact" class="btn btn-orange" style="padding: 0.9rem 2rem;">
+            <span>Contact Me</span>
+            <svg viewBox="0 0 24 24">
+              <path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-7.85-1.42 1.42L16.86 11H5v2z" />
+            </svg>
+          </a>
+          <div class="cta-corner-meta">
+            <span id="ctaClock">12:31 PM PKT</span>
+            <span>Karachi, Pakistan</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       CONTACT FORM SECTION
+       ========================================================================== -->
+    <section class="contact-anchor-section" id="contact" aria-label="Contact Minhaj">
+      <div class="container">
+        <div class="contact-form-grid">
+          <!-- Left Details -->
+          <div class="contact-info-col">
+            <span class="contact-info-tag">GET IN TOUCH</span>
+            <h2 class="contact-info-title">LET'S TALK ABOUT YOUR PROJECT</h2>
+            <p class="contact-info-p">
+              Whether you have an exciting software opening, a freelance project, or an architectural idea, feel free to
+              reach out directly.
+            </p>
+
+            <div class="direct-links-flow">
+              <!-- Email -->
+              <div class="direct-contact-item">
+                <div>
+                  <div class="contact-type-label">Email</div>
+                  <a href="mailto:Minhajtahir2020@gmail.com" class="contact-type-val">Minhajtahir2020@gmail.com</a>
+                </div>
+                <button class="copy-chip-btn" data-copy="Minhajtahir2020@gmail.com">Copy</button>
+              </div>
+
+              <!-- Phone -->
+              <div class="direct-contact-item">
+                <div>
+                  <div class="contact-type-label">Phone</div>
+                  <a href="tel:03351313645" class="contact-type-val">0335 1313645</a>
+                </div>
+                <button class="copy-chip-btn" data-copy="03351313645">Copy</button>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="direct-contact-item">
+                <div>
+                  <div class="contact-type-label">LinkedIn</div>
+                  <a href="https://www.linkedin.com/in/minhaj-tahir-khan" target="_blank" rel="noopener noreferrer"
+                    class="contact-type-val" style="color: var(--brand-orange);">minhaj-tahir-khan</a>
+                </div>
+                <a href="https://www.linkedin.com/in/minhaj-tahir-khan" target="_blank" rel="noopener noreferrer"
+                  class="copy-chip-btn">Visit &rarr;</a>
+              </div>
+
+              <!-- GitHub -->
+              <div class="direct-contact-item">
+                <div>
+                  <div class="contact-type-label">GitHub</div>
+                  <a href="https://github.com/minhajtk" target="_blank" rel="noopener noreferrer"
+                    class="contact-type-val" style="color: var(--brand-orange);">github.com/minhajtk</a>
+                </div>
+                <a href="https://github.com/minhajtk" target="_blank" rel="noopener noreferrer"
+                  class="copy-chip-btn">Visit &rarr;</a>
+              </div>
+
+              <!-- Curriculum Vitae / Resume -->
+              <div class="direct-contact-item">
+                <div>
+                  <div class="contact-type-label">Curriculum Vitae</div>
+                  <a href="./Minhaj_Tahir_Khan_Web_Developer_CV.pdf" target="_blank" class="contact-type-val" style="color: var(--brand-orange);">Minhaj_Tahir_Khan_CV.pdf</a>
+                </div>
+                <a href="./Minhaj_Tahir_Khan_Web_Developer_CV.pdf" target="_blank" download="Minhaj_Tahir_Khan_Web_Developer_CV.pdf" class="copy-chip-btn">Download &darr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Form -->
+          <div class="form-box">
+            <form id="contactForm" novalidate>
+              <div class="form-group" id="groupName">
+                <label for="formName" class="form-label">Your Name *</label>
+                <input type="text" id="formName" class="form-input" placeholder="e.g. Alexander Smith" required
+                  minlength="2">
+                <span class="form-error">Please enter at least 2 characters.</span>
+              </div>
+
+              <div class="form-group" id="groupEmail">
+                <label for="formEmail" class="form-label">Your Email *</label>
+                <input type="email" id="formEmail" class="form-input" placeholder="e.g. alexander@company.com" required>
+                <span class="form-error">Please provide a valid email address.</span>
+              </div>
+
+              <div class="form-group" id="groupSubject">
+                <label for="formSubject" class="form-label">Subject *</label>
+                <input type="text" id="formSubject" class="form-input"
+                  placeholder="e.g. Full-Stack Role / Web App Project" required minlength="3">
+                <span class="form-error">Please provide a subject.</span>
+              </div>
+
+              <div class="form-group" id="groupMessage">
+                <label for="formMessage" class="form-label">Message *</label>
+                <textarea id="formMessage" class="form-textarea"
+                  placeholder="Tell me about your project, timeline, or opportunity..." required
+                  minlength="10"></textarea>
+                <span class="form-error">Please provide a message (min 10 characters).</span>
+              </div>
+
+              <button type="submit" class="btn btn-orange" style="width: 100%; padding: 0.85rem;">
+                <span>Send Message via Email</span>
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-7.85-1.42 1.42L16.86 11H5v2z" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       VIBRANT ORANGE FOOTER (exact match to Design bottom)
+       ========================================================================== -->
+  <footer class="orange-footer-block">
+    <div class="container-wide">
+      <div class="orange-footer-top">
+        <!-- Portrait circle -->
+        <div class="footer-portrait-circle">
+          <img src="PortfolioPicture.jpg" alt="Minhaj Tahir Khan">
+        </div>
+
+        <!-- Links -->
+        <nav class="footer-nav-row" aria-label="Footer Navigation">
+          <a href="#hero" class="footer-nav-link">Home</a>
+          <a href="#about" class="footer-nav-link">About</a>
+          <a href="#skills" class="footer-nav-link">Skills</a>
+          <a href="#process" class="footer-nav-link">Process</a>
+          <a href="#projects" class="footer-nav-link">Projects</a>
+          <a href="#experience" class="footer-nav-link">Experience</a>
+          <a href="./Minhaj_Tahir_Khan_Web_Developer_CV.pdf" target="_blank" download="Minhaj_Tahir_Khan_Web_Developer_CV.pdf" class="footer-nav-link">Resume</a>
+          <a href="#contact" class="footer-nav-link">Contact</a>
+        </nav>
+
+        <!-- Social Buttons -->
+        <div class="footer-social-cluster">
+          <a href="https://www.linkedin.com/in/minhaj-tahir-khan" target="_blank" rel="noopener noreferrer"
+            class="footer-social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 1 0 1.6 1.6 1.6 1.6 0 0 0-1.6-1.6z" />
+            </svg>
+          </a>
+          <a href="https://github.com/minhajtk" target="_blank" rel="noopener noreferrer" class="footer-social-btn"
+            aria-label="GitHub">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+          </a>
+          <a href="mailto:Minhajtahir2020@gmail.com" class="footer-social-btn" aria-label="Email">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Giant Monogram Typography -->
+      <div class="footer-giant-name">
+        MINHAJ TAHIR KHAN
+      </div>
+
+      <div class="footer-legal-bar">
+        <span>&copy; 2026 Minhaj Tahir Khan. All rights reserved.</span>
+        <button class="back-top-arrow" id="backToTop" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24">
+            <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-pill" id="toastPill" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24">
+      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+    </svg>
+    <span id="toastText">Action completed</span>
+  </div>
+
+  <!-- ==========================================================================
+       VANILLA JAVASCRIPT LOGIC
+       ========================================================================== -->
+  <script>
+    (function () {
+      'use strict';
+
+      // ------------------------------------------------------------------------
+      // Live Karachi Clock
+      // ------------------------------------------------------------------------
+      function updateClocks() {
+        try {
+          const now = new Date();
+          const options = {
+            timeZone: 'Asia/Karachi',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: true
+          };
+          const formatter = new Intl.DateTimeFormat('en-US', options);
+          const timeString = formatter.format(now) + ' PKT';
+
+          const clockHeader = document.getElementById('karachiClock');
+          const clockHero = document.getElementById('heroClock');
+          const clockCta = document.getElementById('ctaClock');
+
+          if (clockHeader) clockHeader.textContent = timeString;
+          if (clockHero) clockHero.textContent = timeString;
+          if (clockCta) clockCta.textContent = timeString;
+        } catch (e) {
+          // fallback
+        }
+      }
+      setInterval(updateClocks, 1000);
+      updateClocks();
+
+      // ------------------------------------------------------------------------
+      // Theme Toggle Logic
+      // ------------------------------------------------------------------------
+      const htmlEl = document.documentElement;
+      const themeToggle = document.getElementById('themeToggle');
+      const sunIcon = themeToggle.querySelector('.sun-icon');
+      const moonIcon = themeToggle.querySelector('.moon-icon');
+
+      function setTheme(theme) {
+        htmlEl.setAttribute('data-theme', theme);
+        localStorage.setItem('portfolio-theme', theme);
+        if (theme === 'dark') {
+          sunIcon.style.display = 'block';
+          moonIcon.style.display = 'none';
+        } else {
+          sunIcon.style.display = 'none';
+          moonIcon.style.display = 'block';
+        }
+      }
+
+      const savedTheme = localStorage.getItem('portfolio-theme') ||
+        (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      setTheme(savedTheme);
+
+      themeToggle.addEventListener('click', () => {
+        const current = htmlEl.getAttribute('data-theme') || 'dark';
+        setTheme(current === 'dark' ? 'light' : 'dark');
+      });
+
+      // ------------------------------------------------------------------------
+      // Mobile Drawer Toggle
+      // ------------------------------------------------------------------------
+      const hamburger = document.getElementById('hamburgerBtn');
+      const mobileDrawer = document.getElementById('mobileDrawer');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+      function toggleDrawer(open) {
+        const isOpen = open !== undefined ? open : !mobileDrawer.classList.contains('open');
+        mobileDrawer.classList.toggle('open', isOpen);
+        hamburger.setAttribute('aria-expanded', String(isOpen));
+        mobileDrawer.setAttribute('aria-hidden', String(!isOpen));
+      }
+
+      hamburger.addEventListener('click', () => toggleDrawer());
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => toggleDrawer(false));
+      });
+
+      // ------------------------------------------------------------------------
+      // Active Scroll Spy
+      // ------------------------------------------------------------------------
+      const navLinks = document.querySelectorAll('.nav-link');
+      const sections = document.querySelectorAll('section[id]');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+              link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+            });
+          }
+        });
+      }, { threshold: 0.3 });
+
+      sections.forEach(sec => observer.observe(sec));
+
+      // ------------------------------------------------------------------------
+      // Copy to Clipboard with Toast Notification
+      // ------------------------------------------------------------------------
+      const toastPill = document.getElementById('toastPill');
+      const toastText = document.getElementById('toastText');
+      let toastTimeout = null;
+
+      function showToast(msg) {
+        toastText.textContent = msg;
+        toastPill.classList.add('show');
+        if (toastTimeout) clearTimeout(toastTimeout);
+        toastTimeout = setTimeout(() => {
+          toastPill.classList.remove('show');
+        }, 3000);
+      }
+
+      document.querySelectorAll('.copy-chip-btn').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const text = btn.dataset.copy;
+          if (!text) return;
+          try {
+            await navigator.clipboard.writeText(text);
+            showToast(`Copied: ${text}`);
+          } catch (e) {
+            showToast(`Copied: ${text}`);
+          }
+        });
+      });
+
+      // ------------------------------------------------------------------------
+      // Contact Form Validation & Mailto
+      // ------------------------------------------------------------------------
+      const contactForm = document.getElementById('contactForm');
+      const nameInput = document.getElementById('formName');
+      const emailInput = document.getElementById('formEmail');
+      const subjectInput = document.getElementById('formSubject');
+      const messageInput = document.getElementById('formMessage');
+
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        let valid = true;
+
+        if (nameInput.value.trim().length < 2) {
+          document.getElementById('groupName').classList.add('has-error');
+          valid = false;
+        } else {
+          document.getElementById('groupName').classList.remove('has-error');
+        }
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(emailInput.value.trim())) {
+          document.getElementById('groupEmail').classList.add('has-error');
+          valid = false;
+        } else {
+          document.getElementById('groupEmail').classList.remove('has-error');
+        }
+
+        if (subjectInput.value.trim().length < 3) {
+          document.getElementById('groupSubject').classList.add('has-error');
+          valid = false;
+        } else {
+          document.getElementById('groupSubject').classList.remove('has-error');
+        }
+
+        if (messageInput.value.trim().length < 10) {
+          document.getElementById('groupMessage').classList.add('has-error');
+          valid = false;
+        } else {
+          document.getElementById('groupMessage').classList.remove('has-error');
+        }
+
+        if (valid) {
+          const subject = encodeURIComponent(`[Portfolio Inquiry] ${subjectInput.value.trim()}`);
+          const body = encodeURIComponent(
+            `Hi Minhaj,\n\nName: ${nameInput.value.trim()}\nEmail: ${emailInput.value.trim()}\n\nMessage:\n${messageInput.value.trim()}`
+          );
+
+          showToast('Opening your email client...');
+          setTimeout(() => {
+            window.location.href = `mailto:Minhajtahir2020@gmail.com?subject=${subject}&body=${body}`;
+            contactForm.reset();
+          }, 600);
+        }
+      });
+
+      [nameInput, emailInput, subjectInput, messageInput].forEach(inp => {
+        inp.addEventListener('input', () => {
+          inp.closest('.form-group').classList.remove('has-error');
+        });
+      });
+
+      // ------------------------------------------------------------------------
+      // Back to Top
+      // ------------------------------------------------------------------------
+      document.getElementById('backToTop').addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+    })();
+  </script>
+</body>
+
+</html>
